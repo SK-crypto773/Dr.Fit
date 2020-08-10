@@ -14,14 +14,7 @@ function signUp(){
         var errorCode = error.code;
         var errorMessage = error.message;
         console.log("Success")
-        window.location.href = "patient-info.html"
-
-        if (errorCode != null || errorMessage != null){
-            alert("Error: " + errorCode + errorMessage)
-        } else {
-            alert("You registered Succesfully!")
-            window.location.href = "patient-info.html"
-        }
+        alert("You registered Succesfully!")
         window.location.href = "patient-info.html"
         // ...
     });
