@@ -7,11 +7,7 @@ function infoReturn(){
           // User is signed in.
           // ...
           return;
-        } else {
-          // User is signed out.
-          // ...
-          window.location.href = "login.html"
-        }
+        } 
     });
     
     var obj = {
@@ -1024,7 +1020,7 @@ function infoReturn(){
         let dataStr = JSON.stringify(obj);
         let dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
 
-        let exportFileDefaultName = 'data.json';
+        let exportFileDefaultName = 'patient-data.json';
 
         let linkElement = document.createElement('a');
         linkElement.setAttribute('href', dataUri);
