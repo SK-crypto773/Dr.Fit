@@ -1033,7 +1033,7 @@ function infoReturn(){
         console.log("Downloaded!")
     } else {
         var newArray = obj.patient.filter(function (el) {
-        return el.first_name == name; // Changed this so a home would match
+        return el.first_name && el.last_name == name; // Changed this so a home would match
         });
         console.log(newArray);
         var mainContainer = document.getElementById("dataInfo")
