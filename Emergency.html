@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="assets/css/smoothproducts.css">
 </head>
 
-<body>
+<body style="background-image: url(bg.png);">
   <div class="alan-btn" style="z-index: 1;"></div>
   <script type="text/javascript"
  src="https://studio.alan.app/web/lib/alan_lib.js"></script>
@@ -47,7 +47,7 @@
     document.getElementById("pac-input").innerHTML="hospitals near me";
   }
 </script>
-  <nav>
+  <nav style="background-image: url(bg.png);">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <i  class="fas fa-bars"></i>
@@ -62,19 +62,19 @@
     </ul>
   </nav>
 
-  <section id="intro" style="z-index: -1"></section>
-
 </body>
+
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <p class="emergency">
+    <p style="font-family: Montserrat; color: aliceblue;">
       Use the search box to find a nearby hospital.
     </p>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default">
+    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyQHeTSGuhn_DPNZMnukVeJfC1F0qb1rk&callback=initAutocomplete&libraries=places&v=weekly"
       defer
@@ -83,8 +83,8 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
-        z-index: 1;
+        height: 125%;
+        z-index: -1;
       }
 
       /* Optional: Makes the sample page fill the window. */
@@ -175,7 +175,7 @@
       // pick list containing a mix of places and predicted search terms.
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyQHeTSGuhn_DPNZMnukVeJfC1F0qb1rk&libraries=places">
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
       function initAutocomplete() {
         const map = new google.maps.Map(document.getElementById("map"), {
           center: {
@@ -243,7 +243,6 @@
         });
       }
     </script>
-  </head>
   <body>
     <input
       id="pac-input"
@@ -252,8 +251,5 @@
       placeholder="Search Box"
     />
     <div id="map"></div>
-    <script src="three.r95.min.js"></script>
-    <script src="vanta.waves.min.js"></script>
-    <script src="app.js"></script>
   </body>
 </html>
