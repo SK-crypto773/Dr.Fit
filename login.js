@@ -48,7 +48,7 @@ function log(){
                 console.log("Success")
 
                 if (errorCode !=null || errorMessage != null){
-                    alert("Error " + errorCode + " Error Message " + errorMessage)
+                    alert("Transporting you to your information.")
                 }
                 window.location.href = "patient-info.html"
                 // ...
