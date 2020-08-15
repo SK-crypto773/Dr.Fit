@@ -15,7 +15,7 @@ function signUp(){
         var errorMessage = error.message;
         console.log("Success")
         alert("You registered Succesfully!")
-        window.location.href = "patient-info.html"
+        window.location.href = "login.html"
         // ...
     });
 }
