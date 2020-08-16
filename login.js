@@ -31,8 +31,8 @@ function log(){
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.
-          alert("You are already logged in.")
-          window.location.href = "index.html"
+          alert("You are logged in.")
+          window.location.href = "patient-info.html"
           // ...
         } else {
           // User is signed out.
